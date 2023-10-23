@@ -1,0 +1,449 @@
+@import "mixin";
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    @include olcu(100%, $bg-b);
+    @include flex;
+    position: fixed;
+
+    .container {
+        @include container;
+
+        .cont {
+            @include cont;
+            justify-content: space-between;
+
+
+            .nav-1 {
+                width: 100px;
+                height: 50px;
+                background-color: $bg-r;
+
+            }
+
+            .nav-a {
+                width: 500px;
+                height: 50px;
+                background-color: $bg-r;
+            }
+
+            .nav-b {
+                width: 120px;
+                height: 50px;
+                background-color: $bg-r;
+            }
+        }
+    }
+}
+
+
+header {
+    @include olcu(100%, $bg-b);
+    @include flex;
+
+    .container {
+        @include container;
+
+        .cont {
+            @include cont;
+            justify-content: space-between;
+            padding: 300px 0;
+
+            .head-a {
+                @include div (450px, 450px, violet);
+
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                 .head20{
+                    @include div (450px,300px,red);
+                 }
+              .head30{
+                    @include div(450px, 100px,brown);
+                    display: flex;
+                    gap: 30px;
+                  align-items: center;
+                .head1 {
+                    width: 130px;
+                    height: 60px;
+                    background-color: $bg-dark;
+                 
+
+                }
+
+                .head2 {
+                    width: 130px;
+                    height: 60px;
+                    background-color: $bg-dark;
+               
+                }
+            }
+            }
+
+            .head-b {
+                @include div (450px, 450px, violet);
+            }
+        }
+    }
+
+}
+
+section {
+    @include olcu (100%, $bg-light);
+    @include flex;
+
+    .container {
+        @include container;
+
+        .cont {
+            @include cont;
+            flex-direction: column;
+            gap: 50px;
+            padding: 150px 0;
+
+
+            .sec-a {
+                @include div (500px, 200px, $bg-dark);
+            }
+
+            .sec-b {
+                @include div(1050px, 400px, $bg-dark);
+                @include flex;
+                gap: 30px;
+
+                .sec3 {
+                    @include div (300px, 350px, $bg-b);
+                    @include flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .sec1 {
+                        @include div (90px, 90px, $bg-light);
+                    }
+
+                    .sec2 {
+                        @include div (300px, 200px, $bg-r);
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+main {
+    @include olcu(100%, $bg-light);
+    @include flex;
+
+    .container {
+        @include container;
+
+        .cont {
+            @include cont;
+            padding: 100px 0;
+            @include flex;
+            flex-direction: column;
+            gap: 100px;
+
+            .main-a {
+                @include div (1050px, 100px, $bg-dark);
+                @include flex;
+                justify-content: space-between;
+
+                .main1 {
+                    @include div (230px, 80px, red);
+                }
+            }
+
+            .main-b {
+                @include div (1050px, 500px, $bg-light);
+
+                @include flex;
+                justify-content: space-between;
+
+                .main2 {
+                    @include div (450px, 500px, yellow);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 50px;
+
+                    .main-4 {
+                        @include div (450px, 350px, $bg-b);
+                    }
+
+                    .but {
+                        @include div (200px, 70px, $bg-b);
+                    }
+
+
+
+                }
+
+                .main3 {
+                    @include div (450px, 500px, yellow);
+
+
+                }
+            }
+        }
+    }
+}
+
+.work {
+    @include olcu (100%, $bg-light);
+    @include flex;
+
+    .container {
+        @include container;
+
+        .cont {
+            @include cont;
+            @include flex;
+            flex-direction: column;
+            gap: 100px;
+            padding: 100px 0;
+
+            .work-a {
+                @include div (700px, 200px, $bg-dark);
+            }
+
+            .work-b {
+                @include div (600px, 500px, $bg-dark);
+            }
+        }
+    }
+}
+
+
+.life {
+    @include olcu (100%, $bg-sky);
+    @include flex;
+
+    .container {
+        @include container;
+
+        .cont {
+            @include cont;
+            @include flex;
+            gap: 50px;
+            padding: 200px 0;
+
+            .life-a {
+                @include div (430px, 400px, $bg-b);
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .life1 {
+                    @include div (430px, 300px, $bg-dark);
+                }
+
+                .life2 {
+                    @include div (200px, 70px, $bg-dark);
+                }
+            }
+
+            .life-b {
+                @include div (430px, 400px, $bg-b);
+            }
+        }
+    }
+}
+
+
+
+.plan {
+    @include olcu (100%, $bg-light);
+    @include flex;
+
+    .container {
+        @include container;
+
+        .cont {
+            @include cont;
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+           
+            .plan-a{
+                @include div (600px, 200px, $bg-b);
+            }
+            .plan-b{
+                @include div (1050px, 600px, $bg-light);
+                display: flex;
+                justify-content: space-between;
+
+                .plan1{
+                    @include div (310px, 600px, $bg-r);
+                    @include flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    .plan2{
+                        @include div (310px, 80px, violet);
+                    }
+                    .plan3{
+                        @include div(230px, 200px, $bg-light);
+                    }
+                    .plan4{
+                     @include div(280px, 280px, violet);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.blog {
+    @include olcu (100%, $bg-sky);
+    @include flex;
+
+    .container {
+        @include container;
+
+        .cont {
+            @include cont;
+            @include flex;
+            flex-direction: column;
+            padding: 200px 0;
+            gap: 100px;
+
+            .blog-a{
+                @include div(600px, 200px, violet);
+
+            }
+            .blog-b{
+                @include div(1050px, 300px, $bg-sky);
+                @include flex;
+                justify-content: space-between;
+
+                .blog1{
+                    @include div (500px, 300px, violet);
+                    @include flex;
+                    gap: 20px;
+                  .blog2{
+                    @include div (100px, 100px, blue);
+                    border-radius: 50%;
+                  }
+                  .blog3{
+                    @include div (300px, 220px, blue)
+                  }
+                }
+            }
+        }
+    }
+}
+
+
+.about {
+    @include olcu (100%, $bg-light);
+    @include flex;
+
+    .container {
+        @include container;
+
+        .cont {
+            @include cont;
+            @include flex;
+            gap: 50px;
+            padding: 200px 0;
+
+            .about-a {
+                @include div (430px, 400px, $bg-b);
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .about1 {
+                    @include div (430px, 300px, $bg-dark);
+                }
+
+                .about2 {
+                    @include div (200px, 70px, $bg-dark);
+                }
+            }
+
+            .about-b {
+                @include div (430px, 400px, $bg-b);
+            }
+        }
+    }
+}
+
+
+.end {
+    @include olcu (100%, $bg-b);
+    @include flex;
+
+    .container {
+        @include container;
+
+        .cont {
+            @include cont;
+            @include flex;
+            padding: 50px 0;
+            .end-a{
+                @include div (700px, 400px,violet);
+                 @include flex;
+                 flex-direction: column;
+                 gap: 20px;
+                .end1{
+                    @include div (700px, 300px, rgb(46, 3, 46));
+                }
+                .end2{
+                    @include div (200px, 70px, rgb(3, 49, 3));
+                }
+            }
+        
+            
+
+        }
+    }
+}
+
+
+footer {
+    @include olcu (100%, $bg-dark);
+    @include flex;
+
+    .container {
+        @include container;
+
+        .cont {
+            @include cont;
+            @include flex;
+            padding: 50px 0;
+            justify-content: space-between;
+           
+            .f1{
+                @include div (400px, 300px, $bg-light);
+
+            }
+            .f2{
+                @include div (300px, 300px, $bg-light);
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                .f10{
+                    @include div(300px, 150px, darkcyan);
+                }
+                .f11{
+                    @include div(300px, 50px, cyan);
+
+                }
+            }
+            .f3{
+                @include div (200px, 300px, $bg-light);
+
+                
+            }
+        }
+    }
+}
